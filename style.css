@@ -1,37 +1,44 @@
 body {
     background-color: #001f3f;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh; 
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.btn {
-    background-color: #c40021; /* Rouge */
-    color: #ffffff;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-    border-radius: 6px;
-    width: 200px;
-    text-decoration: none;
-
+    padding: 20px;
 }
 
 h1 {
     font-size: 48px;
+    font-weight: 800;
+    color: #c40021;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.grid-boutons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    max-width: 500px; 
+}
+
+.btn {
+    background-color: #c40021;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 1.1rem;
     font-weight: 600;
-    color:#c40021;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    display: block; 
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #a3001b;
 }
